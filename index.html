@@ -1,59 +1,226 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Young Joey</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Young Joey | AI开发求职主页</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 760px;
-      margin: 60px auto;
-      padding: 0 20px;
-      line-height: 1.8;
-      color: #222;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+      line-height: 1.75;
     }
-    h1 {
-      margin-bottom: 8px;
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
     }
-    .muted {
-      color: #666;
+    .hero {
+      background: linear-gradient(135deg, #111827, #1f3a8a);
+      color: white;
+      border-radius: 20px;
+      padding: 40px 32px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
     }
-    .card {
+    .hero h1 {
+      margin: 0;
+      font-size: 42px;
+      line-height: 1.2;
+    }
+    .hero .subtitle {
+      margin-top: 12px;
+      font-size: 20px;
+      color: #dbeafe;
+    }
+    .hero .intro {
+      margin-top: 18px;
+      max-width: 720px;
+      font-size: 16px;
+      color: #e5e7eb;
+    }
+    .hero .actions {
+      margin-top: 24px;
+    }
+    .hero .actions a {
+      display: inline-block;
+      margin-right: 12px;
+      margin-bottom: 10px;
+      padding: 10px 18px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn-primary {
+      background: white;
+      color: #111827;
+    }
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.35);
+      color: white;
+    }
+    .section {
+      margin-top: 24px;
+      background: white;
+      border-radius: 18px;
+      padding: 28px 24px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+    .section h2 {
+      margin: 0 0 16px;
+      font-size: 22px;
+      color: #111827;
+      border-left: 5px solid #2563eb;
+      padding-left: 12px;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .tag {
+      background: #eff6ff;
+      color: #1d4ed8;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .project {
       border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 20px;
-      margin-top: 20px;
+      border-radius: 14px;
+      padding: 18px;
+      margin-top: 14px;
+    }
+    .project h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+    .project p {
+      margin: 6px 0;
+      color: #4b5563;
+    }
+    .info-list p {
+      margin: 10px 0;
+    }
+    .footer {
+      text-align: center;
+      color: #6b7280;
+      margin-top: 26px;
+      font-size: 14px;
     }
     a {
-      color: #0969da;
-      text-decoration: none;
+      color: #2563eb;
     }
-    a:hover {
-      text-decoration: underline;
+    @media (max-width: 640px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+      .hero .subtitle {
+        font-size: 18px;
+      }
+      .container {
+        padding: 20px 14px 40px;
+      }
+      .hero, .section {
+        padding: 22px 18px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Young Joey</h1>
-  <p class="muted">Welcome to my personal homepage.</p>
+  <div class="container">
+    <section class="hero">
+      <h1>Young Joey</h1>
+      <div class="subtitle">AI开发 / Python / 小程序 / 自动化应用方向求职中</div>
+      <p class="intro">
+        你好，我是 Young Joey，正在聚焦 AI 应用开发、Python 编程、小程序开发与效率工具搭建。
+        这个主页用于展示我的项目经历、技能栈和联系方式，希望进入一个能够持续成长、解决真实问题的团队。
+      </p>
+      <div class="actions">
+        <a class="btn-primary" href="https://github.com/youngjoey-ai" target="_blank">查看 GitHub</a>
+        <a class="btn-secondary" href="mailto:824284954@qq.com">联系我</a>
+      </div>
+    </section>
 
-  <div class="card">
-    <h2>About Me</h2>
-    <p>I’m Young Joey. I’m interested in AI, coding, and building useful things.</p>
-  </div>
+    <section class="section">
+      <h2>关于我</h2>
+      <p>
+        我关注的方向主要是 AI 应用落地，而不是只停留在模型概念层面。
+        我更感兴趣的是：把工具做出来，把流程跑起来，把真实需求解决掉。
+      </p>
+      <p>
+        目前正在持续学习和实践：Python、GitHub、前端基础、小程序开发、AI 工作流搭建，以及如何把这些能力组织成可交付的项目。
+      </p>
+    </section>
 
-  <div class="card">
-    <h2>Links</h2>
-    <p><a href="https://github.com/youngjoey-ai" target="_blank">GitHub</a></p>
-    <p><a href="mailto:824284954@qq.com">Email</a></p>
-  </div>
+    <section class="section">
+      <h2>技能栈</h2>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">Git / GitHub</span>
+        <span class="tag">HTML / CSS</span>
+        <span class="tag">AI应用开发</span>
+        <span class="tag">Prompt 设计</span>
+        <span class="tag">自动化工作流</span>
+        <span class="tag">小程序开发</span>
+        <span class="tag">产品思维</span>
+      </div>
+    </section>
 
-  <div class="card">
-    <h2>Projects</h2>
-    <ul>
-      <li>Coming soon...</li>
-    </ul>
+    <section class="section">
+      <h2>项目经历</h2>
+
+      <div class="project">
+        <h3>项目一：AI 开发学习与实战主页</h3>
+        <p><strong>项目定位：</strong>围绕 AI 开发学习路径、代码实践与成果展示搭建个人站点。</p>
+        <p><strong>我做了什么：</strong>使用 GitHub Pages 搭建个人主页，独立完成仓库创建、页面部署、基础前端页面编写与内容组织。</p>
+        <p><strong>收获：</strong>熟悉了 GitHub 仓库、Pages 发布、前端静态页面结构，以及个人技术品牌的基本搭建方式。</p>
+      </div>
+
+      <div class="project">
+        <h3>项目二：AI 工具与自动化方向持续实践</h3>
+        <p><strong>项目定位：</strong>探索 AI 在学习、写作、开发辅助和效率提升场景中的落地方法。</p>
+        <p><strong>我做了什么：</strong>尝试用 AI 辅助代码生成、页面搭建、问题拆解和项目推进，持续积累可复用的开发流程。</p>
+        <p><strong>收获：</strong>形成了从需求理解、页面实现到上线验证的一整套实践闭环。</p>
+      </div>
+
+      <div class="project">
+        <h3>项目三：小程序 / Web 应用方向准备中</h3>
+        <p><strong>规划：</strong>接下来会继续补充更完整的项目作品，包括小程序、工具型 Web 页面和 AI 应用 Demo。</p>
+        <p><strong>目标：</strong>把“会学”逐步转化成“会做、能交付、能展示”。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>求职方向</h2>
+      <p>我目前重点关注以下岗位或方向：</p>
+      <ul>
+        <li>AI 应用开发实习 / 初级岗位</li>
+        <li>Python 开发</li>
+        <li>小程序开发</li>
+        <li>技术运营 / AI 产品助理 / 自动化工具搭建相关岗位</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>联系方式</h2>
+      <div class="info-list">
+        <p><strong>邮箱：</strong><a href="mailto:824284954@qq.com">824284954@qq.com</a></p>
+        <p><strong>GitHub：</strong><a href="https://github.com/youngjoey-ai" target="_blank">github.com/youngjoey-ai</a></p>
+        <p><strong>主页：</strong><a href="https://youngjoey-ai.github.io" target="_blank">youngjoey-ai.github.io</a></p>
+      </div>
+    </section>
+
+    <div class="footer">
+      © 2026 Young Joey · Personal Portfolio Website
+    </div>
   </div>
 </body>
 </html>
